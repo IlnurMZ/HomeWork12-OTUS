@@ -58,15 +58,14 @@ namespace Librarian
             while (true)
             {
                 foreach (var item in library)
-                {
-                    //Console.WriteLine($"Status: {item.Key} - {item.Value}");
-                    library[item.Key]++;
-                    await Task.Delay(500);
+                {                    
+                    library[item.Key]++;                  
                     if (library[item.Key] >= 100)
                     {
                         library.TryRemove(item.Key, out int value);
                     }
                 }
+                await Task.Delay(1000);
             }            
         }
     }
