@@ -1,5 +1,5 @@
 ﻿using System.Collections.Concurrent;
-
+// Библиотека (ConcurrentDictionary)
 namespace Librarian
 {
     internal class Program
@@ -49,7 +49,7 @@ namespace Librarian
         {
             foreach (var item in library)
             {
-                Console.WriteLine($"{item.Key} - {item.Value}");
+                Console.WriteLine($"{item.Key} - {item.Value}%");
             }            
         }
 
