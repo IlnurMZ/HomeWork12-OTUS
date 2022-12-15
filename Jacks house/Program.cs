@@ -1,5 +1,5 @@
 ﻿using System.Collections.Immutable;
-
+// Дом, который построил Джек (ImmutableList)
 namespace Jacks_house
 {
     internal class Program
